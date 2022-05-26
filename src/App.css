@@ -1,38 +1,44 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  padding: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.urunler {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+h2 {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+body {
+  background: #eb3349; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f45c43,
+    #eb3349
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f45c43,
+    #eb3349
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sepet {
+  list-style-type: none;
+  color: white;
+}
+.sepet > li {
+  padding: 10px;
+  font-size: 20px;
+}
+.sepet-temizle {
+  padding: 10px;
+  background-color: #ff0055;
+  color: #000066;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+.sepet-temizle:hover {
+  cursor: pointer;
 }
